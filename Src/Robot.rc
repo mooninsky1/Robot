@@ -1,0 +1,233 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ZoneServer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\app_icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 239, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景服务器"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,10,20,20
+    LTEXT           "场景服务器 1.0版 ",IDC_STATIC,40,12,192,8,SS_NOPREFIX
+    LTEXT           "公司保留所有权利 (C) 2008",IDC_STATIC,40,25,188,8
+    DEFPUSHBUTTON   "确定",IDOK,176,40,50,16,WS_GROUP
+END
+
+IDD_ZONESERVER_DIALOG DIALOGEX 0, 0, 502, 361
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "机器人测试"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭服务",IDCLOSE,429,7,57,25
+    CONTROL         "",IDC_RICHEDIT_TRACE,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,339,297
+    GROUPBOX        "本服务器",IDC_STATIC,354,66,137,76
+    COMBOBOX        IDC_COMBO_SCHEME,67,314,412,99,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "配置刷新",IDC_BUTTON_SCHEME,7,310,55,18
+    EDITTEXT        IDC_EDIT_LUA,101,337,379,16,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "LUA刷新",IDC_BUTTON_LUA,7,335,55,18,WS_DISABLED
+    DEFPUSHBUTTON   "启动服务",IDSTART,357,7,57,25
+    PUSHBUTTON      "浏览",IDC_BUTTON_SCANLUA,67,335,33,18,WS_DISABLED
+    LTEXT           "场景服名字",IDC_STATIC,357,94,41,8
+    LTEXT           "中心服ＩＰ",IDC_STATIC,357,151,41,8,WS_DISABLED
+    LTEXT           "中心服端口",IDC_STATIC,356,167,41,8,WS_DISABLED
+    LTEXT           "场景服ＩＤ",IDC_STATIC,357,77,42,8
+    EDITTEXT        IDC_EDIT_ZONEID,399,73,87,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ZONENAME,399,94,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CENTERIP,400,147,87,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_CENTERPORT,400,165,87,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,354,140,136,41
+    GROUPBOX        "",IDC_STATIC,349,58,146,187
+    PUSHBUTTON      "清空记录",IDC_BTN_CLEAR,356,255,50,14
+    GROUPBOX        "",IDC_STATIC,349,246,146,59
+    CONTROL         "输出详细信息",IDC_CHECK_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,356,274,64,10
+    CONTROL         "输出Trace信息",IDC_CHECK_TRACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,356,289,68,10
+    CONTROL         "输出警告信息",IDC_CHECK_WARNING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,275,64,10
+    CONTROL         "输出错误信息",IDC_CHECK_ERROR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,422,289,64,10
+    CTEXT           "0",IDC_STATIC_ONLINENUM,446,46,29,8
+    GROUPBOX        "远程登录服务器",IDC_STATIC,354,189,136,52
+    LTEXT           "IP",IDC_STATIC,356,208,9,8
+    LTEXT           "端口",IDC_STATIC,356,226,17,8
+    CONTROL         "",IDC_LOGIN_SERVER_IPADDRESS,"SysIPAddress32",WS_TABSTOP,387,201,100,15
+    EDITTEXT        IDC_LOGIN_SERVER_PORT,387,221,100,15,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "端口",IDC_STATIC,357,113,17,8
+    EDITTEXT        IDC_EDIT_ZONE_PORT,400,109,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "GM端口",IDC_STATIC,358,128,25,8
+    EDITTEXT        IDC_EDIT_GM_PORT,400,125,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "在线人数：",IDC_STATIC,355,45,41,8
+    LTEXT           "/",IDC_STATIC,437,46,8,8
+    CTEXT           "0",IDC_STATIC_ONLINENUM_REAL,403,46,29,8
+    CONTROL         "逻辑错误定位",IDC_LOGIC_ERROR_LOCATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,258,64,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "公司"
+            VALUE "FileDescription", " "
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ZoneServer.exe"
+            VALUE "LegalCopyright", "(C) 公司。保留所有权利。"
+            VALUE "OriginalFilename", "ZoneServer.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "delete"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_ZONESERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 495
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ZoneServer(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Robot.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
